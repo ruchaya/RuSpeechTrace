@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "rows": 68000,
+  "unique_file_ids": 68000,
+  "generator_count": 34,
+  "split_counts": {
+    "train": 44200,
+    "test": 13600,
+    "validation": 10200
+  },
+  "feature_columns": 789,
+  "spectral_columns": 777,
+  "prosody_columns": 12,
+  "infinite_values": 0,
+  "all_nan_feature_columns": [],
+  "constant_feature_columns": [],
+  "features_with_missing_values": 4,
+  "max_missing_pct": 0.142647,
+  "top_missing_features": [
+    {
+      "feature": "prosody_f0_max",
+      "n_missing": 97,
+      "missing_pct": 0.142647
+    },
+    {
+      "feature": "prosody_f0_mean",
+      "n_missing": 97,
+      "missing_pct": 0.142647
+    },
+    {
+      "feature": "prosody_f0_min",
+      "n_missing": 97,
+      "missing_pct": 0.142647
+    },
+    {
+      "feature": "prosody_f0_std",
+      "n_missing": 97,
+      "missing_pct": 0.142647
+    }
+  ],
+  "feature_split_metadata_mismatches": 0,
+  "missing_feature_rows": 0,
+  "extra_feature_rows": 0,
+  "sha256": {
+    "features\\ruasd_closed_set_acoustic_fixed4.parquet": "b63fc1a4590590e9230789ec5bc7451b6a4e45f66294ab7f53ea62c1065ebffb",
+    "splits\\closed_set.csv": "f1ae86e0ebc76c6f6ddf3fe349844347ada5fc460be496edc8087c73f493f6e0",
+    "features\\ruasd_closed_set_acoustic_fixed4.meta.json": "c6bbdf71e54e356620829a38746146c0a08b15d3fd4df4ba5d67b76be0b5ec8a"
+  },
+  "problems": []
+}

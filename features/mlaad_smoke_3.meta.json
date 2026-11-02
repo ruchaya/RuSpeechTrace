@@ -1,0 +1,9 @@
+{
+  "feature_signature": "fdeb11d26a440f8d",
+  "split_sha256": "eb15ba014568b27fed23420068690ad9d190bed6ea20e4413598d0e8bb72940d",
+  "config_sha256": "98d8fd6a457bf6d6bbb52948d4272d8f815da7baef166bd7ca8b3b98fd61af28",
+  "rows": 3,
+  "feature_columns": 790,
+  "newly_computed": 3,
+  "cache_reused": 0
+}
