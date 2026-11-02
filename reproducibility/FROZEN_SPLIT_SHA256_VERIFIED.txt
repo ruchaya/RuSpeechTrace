@@ -1,0 +1,4 @@
+﻿RuASD split : f1ae86e0ebc76c6f6ddf3fe349844347ada5fc460be496edc8087c73f493f6e0 : closed_set.csv
+MLAAD folds : eac341ab00a413ff1360ed4324316ff7822a056c4d02717e62b6c9691a66cde0 : mlaad_23class_open_set_folds_v1.json
+MLAAD split : f4b66a0c8cbce8e7629d85838eb371d5f7381a9d2eafb63917f8ccf1fe5fbd66 : mlaad_ru_23class_split_v1.csv
+RuASD folds : cac3bf00c0e8f77a1a2a37a4b3b005c1ce65ba3dbaf364d3b028dd5dde20171d : open_set_folds.json

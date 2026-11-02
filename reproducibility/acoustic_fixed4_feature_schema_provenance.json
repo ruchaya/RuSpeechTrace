@@ -1,0 +1,11 @@
+{
+  "description": "Ordered acoustic feature columns for fixed4",
+  "source_feature_store": "features/ruasd_closed_set_acoustic_fixed4.parquet",
+  "source_feature_store_rows": 68000,
+  "selection_rule": [
+    "spectral_",
+    "prosody_"
+  ],
+  "feature_count": 789,
+  "ordered_names_sha256": "655d3d63728e8d3a84bfcbd116d1b97e168b8add6418d077ef03c83ed4674da3"
+}
