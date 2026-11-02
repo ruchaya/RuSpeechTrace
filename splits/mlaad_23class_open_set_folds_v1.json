@@ -1,0 +1,159 @@
+{
+  "n_folds": 5,
+  "assignment_strategy": "predefined_family_grouped_v1",
+  "source_split": "splits\\mlaad_ru_23class_split_v1.csv",
+  "source_split_sha256": "f4b66a0c8cbce8e7629d85838eb371d5f7381a9d2eafb63917f8ccf1fe5fbd66",
+  "generators": 23,
+  "folds": {
+    "1": {
+      "known_generators": [
+        "Chatterbox Multilingual",
+        "Fish-S2-Pro",
+        "Higgs-Audio-V3",
+        "LEMAS-TTS",
+        "MOSS-TTS-1.7B",
+        "MOSS-TTS-8B",
+        "OmniVoice",
+        "OpenAI TTS-1 HD",
+        "OuteTTS",
+        "Qwen3-TTS-12Hz-0.6B-Base",
+        "Qwen3-TTS-12Hz-1.7B-Base",
+        "VoxCPM2",
+        "facebook_mms-tts-rus",
+        "griffin_lim",
+        "supertonic-3",
+        "tts_models_multilingual_multi-dataset_bark",
+        "tts_models_multilingual_multi-dataset_xtts_v1.1",
+        "tts_models_multilingual_multi-dataset_xtts_v2"
+      ],
+      "unknown_generators": [
+        "Edge-TTS",
+        "RVC",
+        "dots.tts-base",
+        "dots.tts-mf",
+        "dots.tts-soar"
+      ],
+      "rule": "Unknown generators are absent from training, validation, and threshold tuning."
+    },
+    "2": {
+      "known_generators": [
+        "Edge-TTS",
+        "Fish-S2-Pro",
+        "LEMAS-TTS",
+        "OmniVoice",
+        "OpenAI TTS-1 HD",
+        "OuteTTS",
+        "Qwen3-TTS-12Hz-0.6B-Base",
+        "Qwen3-TTS-12Hz-1.7B-Base",
+        "RVC",
+        "VoxCPM2",
+        "dots.tts-base",
+        "dots.tts-mf",
+        "dots.tts-soar",
+        "facebook_mms-tts-rus",
+        "supertonic-3",
+        "tts_models_multilingual_multi-dataset_bark",
+        "tts_models_multilingual_multi-dataset_xtts_v1.1",
+        "tts_models_multilingual_multi-dataset_xtts_v2"
+      ],
+      "unknown_generators": [
+        "Chatterbox Multilingual",
+        "Higgs-Audio-V3",
+        "MOSS-TTS-1.7B",
+        "MOSS-TTS-8B",
+        "griffin_lim"
+      ],
+      "rule": "Unknown generators are absent from training, validation, and threshold tuning."
+    },
+    "3": {
+      "known_generators": [
+        "Chatterbox Multilingual",
+        "Edge-TTS",
+        "Higgs-Audio-V3",
+        "MOSS-TTS-1.7B",
+        "MOSS-TTS-8B",
+        "OmniVoice",
+        "OuteTTS",
+        "RVC",
+        "VoxCPM2",
+        "dots.tts-base",
+        "dots.tts-mf",
+        "dots.tts-soar",
+        "facebook_mms-tts-rus",
+        "griffin_lim",
+        "supertonic-3",
+        "tts_models_multilingual_multi-dataset_bark",
+        "tts_models_multilingual_multi-dataset_xtts_v1.1",
+        "tts_models_multilingual_multi-dataset_xtts_v2"
+      ],
+      "unknown_generators": [
+        "Fish-S2-Pro",
+        "LEMAS-TTS",
+        "OpenAI TTS-1 HD",
+        "Qwen3-TTS-12Hz-0.6B-Base",
+        "Qwen3-TTS-12Hz-1.7B-Base"
+      ],
+      "rule": "Unknown generators are absent from training, validation, and threshold tuning."
+    },
+    "4": {
+      "known_generators": [
+        "Chatterbox Multilingual",
+        "Edge-TTS",
+        "Fish-S2-Pro",
+        "Higgs-Audio-V3",
+        "LEMAS-TTS",
+        "MOSS-TTS-1.7B",
+        "MOSS-TTS-8B",
+        "OpenAI TTS-1 HD",
+        "Qwen3-TTS-12Hz-0.6B-Base",
+        "Qwen3-TTS-12Hz-1.7B-Base",
+        "RVC",
+        "VoxCPM2",
+        "dots.tts-base",
+        "dots.tts-mf",
+        "dots.tts-soar",
+        "facebook_mms-tts-rus",
+        "griffin_lim",
+        "supertonic-3",
+        "tts_models_multilingual_multi-dataset_bark"
+      ],
+      "unknown_generators": [
+        "OmniVoice",
+        "OuteTTS",
+        "tts_models_multilingual_multi-dataset_xtts_v1.1",
+        "tts_models_multilingual_multi-dataset_xtts_v2"
+      ],
+      "rule": "Unknown generators are absent from training, validation, and threshold tuning."
+    },
+    "5": {
+      "known_generators": [
+        "Chatterbox Multilingual",
+        "Edge-TTS",
+        "Fish-S2-Pro",
+        "Higgs-Audio-V3",
+        "LEMAS-TTS",
+        "MOSS-TTS-1.7B",
+        "MOSS-TTS-8B",
+        "OmniVoice",
+        "OpenAI TTS-1 HD",
+        "OuteTTS",
+        "Qwen3-TTS-12Hz-0.6B-Base",
+        "Qwen3-TTS-12Hz-1.7B-Base",
+        "RVC",
+        "dots.tts-base",
+        "dots.tts-mf",
+        "dots.tts-soar",
+        "griffin_lim",
+        "tts_models_multilingual_multi-dataset_xtts_v1.1",
+        "tts_models_multilingual_multi-dataset_xtts_v2"
+      ],
+      "unknown_generators": [
+        "VoxCPM2",
+        "facebook_mms-tts-rus",
+        "supertonic-3",
+        "tts_models_multilingual_multi-dataset_bark"
+      ],
+      "rule": "Unknown generators are absent from training, validation, and threshold tuning."
+    }
+  }
+}

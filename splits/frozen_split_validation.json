@@ -1,0 +1,88 @@
+{
+  "passed": true,
+  "closed_set_rows": 68000,
+  "generator_count": 34,
+  "split_counts": {
+    "train": 44200,
+    "test": 13600,
+    "validation": 10200
+  },
+  "per_generator_quota": {
+    "train": 1300,
+    "validation": 300,
+    "test": 400
+  },
+  "unique_text_hashes_by_split": {
+    "train": 10500,
+    "validation": 2534,
+    "test": 3287
+  },
+  "text_hash_intersections": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "open_set_fold_sizes": {
+    "1": {
+      "known": 27,
+      "unknown": 7
+    },
+    "2": {
+      "known": 27,
+      "unknown": 7
+    },
+    "3": {
+      "known": 27,
+      "unknown": 7
+    },
+    "4": {
+      "known": 27,
+      "unknown": 7
+    },
+    "5": {
+      "known": 28,
+      "unknown": 6
+    }
+  },
+  "unknown_occurrence_counts": {
+    "TeraTTS": 1,
+    "bark_small_tts": 1,
+    "coquiTTS": 1,
+    "espeech_podcaster": 1,
+    "espeech_rl-v1": 1,
+    "espeech_rl-v2": 1,
+    "espeech_sft-256k": 1,
+    "espeech_sft-95k": 1,
+    "fishsTTS": 1,
+    "g2pTTS": 1,
+    "girl_nice": 1,
+    "glados": 1,
+    "glados2": 1,
+    "mishaf5TTS": 1,
+    "mms_tts_rus": 1,
+    "piperTTS": 1,
+    "pyx3TTS": 1,
+    "rfsTTS": 1,
+    "rhvoiceTTS": 1,
+    "ruxTTS": 1,
+    "sberTTS": 1,
+    "sf5TTS": 1,
+    "sileroTTS": 1,
+    "t5TTS": 1,
+    "tts_ru_free_hf_vits_high_multispeaker": 1,
+    "tts_ru_free_hf_vits_low_multispeaker": 1,
+    "tts_ru_hifigan_ruslan": 1,
+    "tts_transformer-ru-cv7_css10": 1,
+    "tts_vits_ru_hf": 1,
+    "vits2TTS": 1,
+    "vkTTS": 1,
+    "vosk-gpt-sovits": 1,
+    "voskTTS": 1,
+    "xtts_ru_ipa": 1
+  },
+  "sha256": {
+    "splits\\closed_set.csv": "f1ae86e0ebc76c6f6ddf3fe349844347ada5fc460be496edc8087c73f493f6e0",
+    "splits\\open_set_folds.json": "cac3bf00c0e8f77a1a2a37a4b3b005c1ce65ba3dbaf364d3b028dd5dde20171d"
+  },
+  "problems": []
+}

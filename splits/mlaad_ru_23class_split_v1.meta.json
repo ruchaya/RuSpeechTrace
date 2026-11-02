@@ -1,0 +1,20 @@
+{
+  "seed": 2026,
+  "trial": 0,
+  "source": "splits\\mlaad_ru_manifest.csv",
+  "rows": 23000,
+  "generators": 23,
+  "components": 13269,
+  "target_per_generator": {
+    "train": 650,
+    "validation": 150,
+    "test": 200
+  },
+  "balance_loss": 0,
+  "max_deviation": 0,
+  "leakage_keys": [
+    "text_key",
+    "original_file"
+  ],
+  "sha256": "f4b66a0c8cbce8e7629d85838eb371d5f7381a9d2eafb63917f8ccf1fe5fbd66"
+}
