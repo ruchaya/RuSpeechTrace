@@ -1,0 +1,3 @@
+﻿experiment,n_features,validation_macro_f1,test_macro_f1,test_balanced_accuracy,test_top1_accuracy,test_top3_accuracy,run_dir
+same_sr_24000_acoustic_no_duration,789,0.9576287196137189,0.9613882247292854,0.9615384615384616,0.9615384615384616,0.9976923076923077,results\raw\same_sr_24000_acoustic_no_duration\20261001T131254Z_seed42
+same_sr_24000_duration_only,1,0.18986462656632422,0.1880445948289638,0.20865384615384613,0.20865384615384616,0.41346153846153844,results\raw\same_sr_24000_duration_only\20261001T131256Z_seed42

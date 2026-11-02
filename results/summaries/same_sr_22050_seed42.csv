@@ -1,0 +1,3 @@
+﻿experiment,n_features,validation_macro_f1,test_macro_f1,test_balanced_accuracy,test_top1_accuracy,test_top3_accuracy,run_dir
+same_sr_22050_acoustic_no_duration,789,0.975554469087515,0.974997499749975,0.975,0.975,1.0,results\raw\same_sr_22050_acoustic_no_duration\20261001T134202Z_seed42
+same_sr_22050_duration_only,1,0.17452476411796347,0.17735419612092565,0.22624999999999998,0.22625,0.43916666666666665,results\raw\same_sr_22050_duration_only\20261001T134203Z_seed42

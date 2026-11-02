@@ -1,0 +1,8 @@
+{
+  "source_metrics": {
+    "acoustic_lr_C1": "results\\raw\\open_set_acoustic_fixed4_lr_C1\\20261020T202911Z_seed42\\metrics.json",
+    "wavlm_lr_C1": "results\\raw\\open_set_wavlm_fixed4_lr_C1\\20261020T203024Z_seed42\\metrics.json"
+  },
+  "seed": 42,
+  "notes": "Five folds, single seed; descriptive statistics. Different test known/unknown subsets by fold. No inferential p-values."
+}
