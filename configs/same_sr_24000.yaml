@@ -1,0 +1,38 @@
+experiment:
+  name: same_sr_24000_control
+  seed: 42
+  output_root: results/raw
+  summary_root: results/summaries
+  status: posthoc_shortcut_diagnostic
+
+control:
+  native_sample_rate: 24000
+  generators:
+    - bark_small_tts
+    - coquiTTS
+    - espeech_podcaster
+    - espeech_rl-v1
+    - espeech_rl-v2
+    - espeech_sft-256k
+    - espeech_sft-95k
+    - mishaf5TTS
+    - ruxTTS
+    - sberTTS
+    - sf5TTS
+    - vkTTS
+    - xtts_ru_ipa
+
+model:
+  type: lightgbm
+  params:
+    objective: multiclass
+    learning_rate: 0.03
+    num_leaves: 31
+    n_estimators: 2000
+    colsample_bytree: 0.9
+    subsample: 0.9
+    reg_lambda: 1.0
+    verbosity: -1
+
+training:
+  early_stopping_rounds: 80

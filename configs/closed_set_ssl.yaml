@@ -1,0 +1,18 @@
+experiment:
+  name: closed_set_wavlm
+  seed: 42
+  output_root: results/raw
+ssl:
+  model_id: microsoft/wavlm-base
+  revision: null
+  sample_rate: 16000
+  max_seconds: 4.0
+  pooling: mean
+  batch_size: 8
+  device: auto
+model:
+  type: logistic
+  params:
+    C: 1.0
+    max_iter: 3000
+    class_weight: balanced

@@ -1,0 +1,22 @@
+experiment:
+  name: open_set_acoustic_fixed4_lr_C1
+  seed: 42
+  output_root: results/raw
+model:
+  type: logistic
+  params:
+    C: 1.0
+    solver: lbfgs
+    penalty: l2
+    max_iter: 600
+    tol: 0.001
+    class_weight: balanced
+feature_selection:
+  include_prefixes: [spectral_, prosody_]
+  exclude_duration: true
+ood:
+  methods: [msp, energy, sme, prototype]
+  temperature_energy: 1.0
+  temperature_sme: 4.0
+  threshold_strategy: known_quantile
+  known_reject_quantile: 0.05

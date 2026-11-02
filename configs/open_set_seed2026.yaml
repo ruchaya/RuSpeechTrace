@@ -1,0 +1,24 @@
+experiment:
+  name: open_set_acoustic
+  seed: 2026
+  output_root: results/raw
+model:
+  type: lightgbm
+  params:
+    objective: multiclass
+    learning_rate: 0.03
+    num_leaves: 31
+    n_estimators: 2000
+    colsample_bytree: 0.9
+    subsample: 0.9
+    reg_lambda: 1.0
+    verbosity: -1
+ood:
+  methods: [msp, energy, sme, prototype]
+  temperature_energy: 1.0
+  temperature_sme: 4.0
+  threshold_strategy: known_quantile
+  known_reject_quantile: 0.05
+feature_selection:
+  include_prefixes: [spectral_, prosody_]
+  exclude_duration: true

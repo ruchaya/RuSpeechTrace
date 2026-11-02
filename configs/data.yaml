@@ -1,0 +1,63 @@
+dataset:
+  ruasd_repo_id: "lab260/RuASD"
+  ruasd_root: "data/raw/RuASD"
+  mlaad_root: "data/external/MLAAD"
+  mlaad_repo_id: null
+
+selection:
+  raw_only: true
+
+  # Frozen primary system-level classes for the strict text-disjoint baseline.
+  # All have >= 2000 recordings with text_hash and >= 2000 unique texts.
+  primary_generators:
+    - TeraTTS
+    - bark_small_tts
+    - coquiTTS
+    - espeech_podcaster
+    - espeech_rl-v1
+    - espeech_rl-v2
+    - espeech_sft-256k
+    - espeech_sft-95k
+    - fishsTTS
+    - g2pTTS
+    - girl_nice
+    - glados
+    - glados2
+    - mishaf5TTS
+    - mms_tts_rus
+    - piperTTS
+    - pyx3TTS
+    - rfsTTS
+    - rhvoiceTTS
+    - ruxTTS
+    - sberTTS
+    - sf5TTS
+    - sileroTTS
+    - t5TTS
+    - tts_ru_free_hf_vits_high_multispeaker
+    - tts_ru_free_hf_vits_low_multispeaker
+    - tts_ru_hifigan_ruslan
+    - tts_transformer-ru-cv7_css10
+    - tts_vits_ru_hf
+    - vits2TTS
+    - vkTTS
+    - vosk-gpt-sovits
+    - voskTTS
+    - xtts_ru_ipa
+
+  # Exact final 65/15/20 allocation per generator: 2000 total.
+  per_split_quota:
+    train: 1300
+    validation: 300
+    test: 400
+
+  external_natural_ood:
+    - 11labs
+
+  excluded_from_primary_missing_reference_text:
+    - grad_tts
+    - edge_tts
+
+split:
+  seed: 42
+  open_set_folds: 5

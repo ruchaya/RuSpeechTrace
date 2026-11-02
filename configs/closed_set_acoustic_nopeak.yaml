@@ -1,0 +1,61 @@
+experiment:
+  name: closed_set_acoustic_nopeak_lightgbm
+  seed: 42
+  output_root: results/raw
+
+# Primary handcrafted representation. These values reproduce the feature
+# definitions and preprocessing used in the previous study's notebook.
+feature_extraction:
+  version: legacy_790_v1
+  sample_rate: 16000
+  max_duration_sec: 10.0
+  min_audio_sec: 0.10
+  peak_normalize: false
+
+  n_fft: 512
+  win_length: 400
+  hop_length: 160
+
+  n_mfcc: 20
+  n_lfcc: 20
+  n_cqcc: 20
+  n_lfcc_filters: 40
+
+  cqcc_hop_length: 256
+  cqcc_n_bins: 72
+  cqcc_bins_per_octave: 12
+
+  f0_min_hz: 60.0
+  f0_max_hz: 500.0
+  f0_frame_length: 1024
+
+  energy_frame_length: 400
+  pause_percentile: 25.0
+  pause_threshold_multiplier: 1.5
+  pause_threshold_floor: 0.0001
+  pause_min_duration_sec: 0.10
+
+  include_duration: true
+
+model:
+  type: lightgbm
+  params:
+    objective: multiclass
+    learning_rate: 0.03
+    num_leaves: 31
+    n_estimators: 2000
+    colsample_bytree: 0.9
+    subsample: 0.9
+    reg_lambda: 1.0
+    verbosity: -1
+
+feature_selection:
+  include_prefixes: [spectral_, prosody_]
+  exclude_columns: []
+  exclude_duration: false
+
+training:
+  early_stopping_rounds: 80
+
+statistics:
+  seeds: [42, 123, 456, 789, 2026]

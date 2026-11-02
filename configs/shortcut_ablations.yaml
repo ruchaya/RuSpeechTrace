@@ -1,0 +1,44 @@
+experiment:
+  seed: 42
+  output_root: results/raw
+  summary_root: results/summaries
+
+baseline:
+  run_dir: results/raw/closed_set_acoustic_lightgbm/20260927T204543Z_seed42
+
+model:
+  type: lightgbm
+  params:
+    objective: multiclass
+    learning_rate: 0.03
+    num_leaves: 31
+    n_estimators: 2000
+    colsample_bytree: 0.9
+    subsample: 0.9
+    reg_lambda: 1.0
+    verbosity: -1
+
+training:
+  early_stopping_rounds: 80
+
+ablations:
+  acoustic_no_duration:
+    description: "All 777 spectral + 12 prosodic features, excluding original duration."
+    mode: acoustic_prefixes
+    include_prefixes: [spectral_, prosody_]
+    exclude_columns: [prosody_duration_sec]
+
+  duration_only:
+    description: "Only the duration feature used in the canonical acoustic representation."
+    mode: explicit
+    columns: [prosody_duration_sec]
+
+  sample_rate_only:
+    description: "Only native sample rate before 16 kHz resampling; diagnostic shortcut baseline."
+    mode: explicit
+    columns: [sample_rate]
+
+  metadata_only:
+    description: "Allowed corpus-level descriptors only: original duration, native sample rate, channels."
+    mode: explicit
+    columns: [duration, sample_rate, channels]

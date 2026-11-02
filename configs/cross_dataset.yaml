@@ -1,0 +1,19 @@
+experiment:
+  name: cross_dataset_family_attribution
+  seed: 42
+  output_root: results/raw
+inputs:
+  ruasd_features: features/ruasd_acoustic.parquet
+  ruasd_splits: splits/closed_set.csv
+  mlaad_features: features/mlaad_acoustic.parquet
+  mapping: data_inventory/family_mapping_ruasd_mlaad.csv
+model:
+  type: lightgbm
+  params:
+    objective: multiclass
+    learning_rate: 0.03
+    num_leaves: 31
+    n_estimators: 1500
+    verbosity: -1
+feature_selection:
+  include_prefixes: [spectral_, prosody_]

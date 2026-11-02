@@ -1,0 +1,14 @@
+dataset:
+  ruasd_repo_id: "lab260/RuASD"
+  ruasd_root: "data/raw/RuASD"
+  mlaad_root: "data/external/MLAAD"
+  mlaad_repo_id: null
+
+selection:
+  raw_only: true
+  max_per_generator: 2000
+  min_per_generator: 50
+  seed: 42
+
+split:
+  seed: 42
