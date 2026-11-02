@@ -1,0 +1,84 @@
+{
+  "purpose": "Independent closed-set prediction metric verification",
+  "python": "3.11.16 | packaged by Anaconda, Inc. | (main, Aug 27 2026, 14:36:16) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "pandas": "3.0.5",
+  "scikit_learn": "1.9.1",
+  "averaging": "macro",
+  "metric_library": "sklearn.metrics",
+  "tolerance": 5.001e-05,
+  "results": [
+    {
+      "experiment": "TADA_RuASD",
+      "source": "results/raw/tada_w2vbert2_layer4_knn21/ruasd/closed_set/test_predictions.csv",
+      "source_sha256": "302776924015cc7955d98f9682eb8332ae3bbfcb341544ec67929fab47562fe3",
+      "rows": 13600,
+      "n_classes": 34,
+      "accuracy": 0.9041911764705882,
+      "macro_f1": 0.9041606288152002,
+      "paper_macro_f1": 0.9042,
+      "paper_accuracy": 0.9042,
+      "checks": {
+        "rows": true,
+        "classes": true,
+        "macro_f1": true,
+        "accuracy": true
+      },
+      "status": "PASS"
+    },
+    {
+      "experiment": "TADA_MLAAD",
+      "source": "results/raw/tada_w2vbert2_layer4_knn21/mlaad/closed_set/test_predictions.csv",
+      "source_sha256": "553554729abd58b3f20b7c7af47ec9147b04592baf7aef4b9f70d8a8e9a9cb80",
+      "rows": 4600,
+      "n_classes": 23,
+      "accuracy": 0.806304347826087,
+      "macro_f1": 0.7997799983361914,
+      "paper_macro_f1": 0.7998,
+      "paper_accuracy": null,
+      "checks": {
+        "rows": true,
+        "classes": true,
+        "macro_f1": true
+      },
+      "status": "PASS"
+    },
+    {
+      "experiment": "AASIST_seed42",
+      "source": "results/raw/aasist_fixed4_ruasd34_seed42/test_predictions.parquet",
+      "source_sha256": "4d6e31d7e1a8d13488df067f3fbec220290724c093cdfa6e2f55b5d7553b24be",
+      "rows": 13600,
+      "n_classes": 34,
+      "accuracy": 0.9144117647058824,
+      "macro_f1": 0.9113825283802219,
+      "paper_macro_f1": 0.9114,
+      "paper_accuracy": 0.9144,
+      "checks": {
+        "rows": true,
+        "classes": true,
+        "macro_f1": true,
+        "accuracy": true
+      },
+      "status": "PASS"
+    },
+    {
+      "experiment": "Acoustic_WavLM_fusion",
+      "source": "results/raw/fixed4_acoustic_wavlm_late_fusion_saved/predictions.parquet",
+      "source_sha256": "ec0b9e7dc627096ace3d1ab334e79fd3fe32e81e65e42c456b4e08da92d25269",
+      "rows": 13600,
+      "n_classes": 34,
+      "accuracy": 0.9661764705882353,
+      "macro_f1": 0.966086136003424,
+      "paper_macro_f1": 0.9661,
+      "paper_accuracy": 0.9662,
+      "checks": {
+        "rows": true,
+        "classes": true,
+        "macro_f1": true,
+        "accuracy": true
+      },
+      "status": "PASS"
+    }
+  ],
+  "errors": []
+}
